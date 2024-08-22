@@ -139,3 +139,12 @@ if __name__ == "__main__":
         print("\nMonitoring stopped.")
     except Exception as e:
         print(f"An error occurred: {e}")
+
+
+'''
+In this final project, I have added new commits along with DoS Blocker and
+ added 3 more important firewall functions:
+1. White- + Blacklist
+2. Signature Detection
+3. Logging
+'''
