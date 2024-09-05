@@ -72,11 +72,11 @@ def packet_callback(packet):
     src_ip = packet[IP].src
 
     # Check if IP is in the whitelist
-    if src_ip in whitelist_ips:
+    if src_ip in blacklist_ips:
         return
 
     # Check if IP is in the blacklist
-    if src_ip in blacklist_ips:
+    if src_ip not in blacklist_ips:
         block_ip(src_ip)
         log_event(f"Blocking blacklisted IP: {src_ip}")
         return
